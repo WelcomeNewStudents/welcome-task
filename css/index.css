@@ -120,6 +120,7 @@ ul:after {
     top: 75px;
     float: left;
     left: 10px;
+    z-index: 3;
     animation: fly_people_in 1.5s linear,fly_people linear infinite 6s 1.5s;
 }
 @keyframes fly_people_in{
@@ -245,14 +246,9 @@ ul:after {
     position: fixed;
     top: 20%;
     right: 50%;
-    margin-left: 100px;
-    transform: translate(445%, 50%);
+    transform: translate(345%, 50%);
     z-index: 3;
-    animation: right_box_in 1.5s linear,fly_rightbox infinite linear 6s 1.5s;
-}
-@keyframes right_box_in{
-    0%  {transform: translate(445%,50%)}
-    100%{transform: translate(345%,50%)}
+    animation: fly_rightbox infinite linear 6s 1.5s;
 }
 @keyframes fly_rightbox{
     0% {transform: translate(345%,50%)}
