@@ -177,9 +177,9 @@ ul:after {
     animation: count_down 1.5s linear;
 }
 @keyframes count_down{
-    0%  {opacity: 0}
-    50% {opacity: 0}
-    100%{opacity: 1}
+    0%  {transform: rotateX(180deg)}
+    50% {transform: rotateX(180deg)}
+    100%{transform: rotateX(0deg)}
 }
 #day{
     position: absolute;
@@ -236,10 +236,17 @@ ul:after {
     margin-left: -750px;
     transform: translate(10%, 50%);
     z-index: 3;
-    animation: left_box_in 1.5s linear;
+    animation: left_box_in 1.5s linear,fly_leftbox infinite linear 6s 1.5s;
 }
 @keyframes left_box_in{
-    0%  {transform: translate(-100%,50%)}
+    0%  {opacity:0; margin-left: -850px;}
+    100%{opacity: 1; margin-left: -750px;}
+}
+@keyframes fly_leftbox{
+    0% {transform: translate(10%,50%)}
+    25%{transform: translate(10%,55%)}
+    50%{transform: translate(10%,50%)}
+    75%{transform: translate(10%,45%)}
     100%{transform: translate(10%,50%)}
 }
 #right_box{
@@ -248,7 +255,11 @@ ul:after {
     right: 50%;
     transform: translate(345%, 50%);
     z-index: 3;
-    animation: fly_rightbox infinite linear 6s 1.5s;
+    animation: right_box_in 1.5s linear, fly_rightbox infinite linear 6s 1.5s;
+}
+@keyframes right_box_in{
+    0%  {opacity: 0; margin-right: -100px}
+    100%{opacity: 1; margin-right: 0}
 }
 @keyframes fly_rightbox{
     0% {transform: translate(345%,50%)}
