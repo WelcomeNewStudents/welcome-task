@@ -1,0 +1,14 @@
+#container{
+    position: relative;
+    width: 865px;
+    height: 510px;
+    margin: 0 auto;
+}
+
+#video_controls{
+    position: absolute;
+    top: 440px;
+    width: 865px;
+    height: 67px;
+    background: #8d8f8d;
+}

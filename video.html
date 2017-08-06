@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/video.css">
+    <script src="js/player.js"></script>
+</head>
+<body>
+    <div id="container">
+        <video id="my_video" class="video-js" width="870x" height="510px"
+               poster='imgs/preload1.png'
+              data-setup='{"aspectRatio":"870:510"}'>
+            <source src="https://vjs.zencdn.net/v/oceans.mp4" type='video/mp4' />
+            <source src="https://vjs.zencdn.net/v/oceans.webm" type='video/webm'/>
+        </video>
+        <div id="video_controls">
+            <button id="playBtn" title="播放"><img src="imgs/s_bofang.png"></button>
+            <div id="progress">  
+                <div id="playProgress">  
+                    <span id="showProgress"></span> 
+                </div>
+            </div>
+            <div id="volume">
+                
+            </div>
+            <button id="fullScreenBtn" title="全屏"><img src="imgs/all_screen.png"></button>
+        </div> 
+    </div>  
+</body>
+</html>
