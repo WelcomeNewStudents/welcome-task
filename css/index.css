@@ -33,6 +33,9 @@ li:after {
 ul:after {
     clear: both;
 }
+img{
+    cursor: default;
+}
 
 /*头部*/
 #header{
@@ -235,7 +238,7 @@ ul:after {
     left: 50%;
     margin-left: -750px;
     transform: translate(10%, 50%);
-    z-index: 3;
+    z-index: 4;
     animation: left_box_in 1.5s linear,fly_leftbox infinite linear 6s 1.5s;
 }
 @keyframes left_box_in{
@@ -254,7 +257,7 @@ ul:after {
     top: 20%;
     right: 50%;
     transform: translate(345%, 50%);
-    z-index: 3;
+    z-index: 4;
     animation: right_box_in 1.5s linear, fly_rightbox infinite linear 6s 1.5s;
 }
 @keyframes right_box_in{
@@ -293,6 +296,7 @@ ul:after {
     background-size: 100% 100%;
     overflow: hidden;
     cursor: default;
+    z-index: 3;
 }
 #real_cqupt_map{
     position: absolute;
@@ -303,7 +307,8 @@ ul:after {
     top: 0;
     left: 0;
     cursor: default;
-    width: 1600px;
+    width: 876px;
+    height: 429px;
 }
 #cqupt_map{
     position: relative;
@@ -323,6 +328,7 @@ ul:after {
     height: 58px;
     top: 345px;
     left: 317px;
+    z-index: 3;
     cursor: pointer;
     background: url(../imgs/coordinate.png) no-repeat;
 }
@@ -332,6 +338,7 @@ ul:after {
     height: 58px;
     top: 370px;
     left: 523px;
+    z-index: 3;
     cursor: pointer;
     background: url(../imgs/coordinate.png) no-repeat;
 }
@@ -340,6 +347,7 @@ ul:after {
     width: 46px;
     height: 58px;
     top: 310px;
+    z-index: 3;
     left: 558px;
     cursor: pointer;
     background: url(../imgs/coordinate.png) no-repeat;
@@ -349,6 +357,7 @@ ul:after {
     width: 46px;
     height: 58px;
     top: 336px;
+    z-index: 3;
     left: 606px;
     cursor: pointer;
     background: url(../imgs/coordinate.png) no-repeat;
@@ -358,6 +367,7 @@ ul:after {
     width: 46px;
     height: 58px;
     top: 420px;
+    z-index: 3;
     left: 680px;
     cursor: pointer;
     background: url(../imgs/coordinate.png) no-repeat;
@@ -378,6 +388,15 @@ ul:after {
 .co1:hover .co1_introduce, .co2:hover .co2_introduce, .co3:hover .co3_introduce, .co4:hover .co4_introduce, .co5:hover .co5_introduce{
     display: block;
     z-index: 2;
+}
+.daxiao{
+    position: absolute;
+    top: 550px;
+    left: 900px;
+    z-index: 3;
+}
+.daxiao img{
+    cursor: pointer;
 }
 /*军训专题*/
 .train{

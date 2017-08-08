@@ -4,6 +4,8 @@ var mi_btn2 = document.querySelector('.mi_btn2');
 var mi_mid2 = document.querySelector('.mi_mid2');
 var mi_btn3 = document.querySelector('.mi_btn3');
 var mi_mid3 = document.querySelector('.mi_mid3');
+var mi_btn4 = document.querySelector('.mi_btn4');
+var mi_mid4 = document.querySelector('.mi_mid4');
 var xunlian = document.querySelector('.xunlian');
 var zhishi = document.querySelector('.zhishi');
 var jilv = document.querySelector('.jilv');
@@ -27,30 +29,64 @@ mi_btn1.addEventListener('click', function (){
     mi_mid1.style.display = 'block';
     mi_mid2.style.display = 'none';
     mi_mid3.style.display = 'none';
+    mi_mid4.style.display = 'none';
+    mi_btn1.style.color = '#ffffff';
+    mi_btn2.style.color = '#ff962a';
+    mi_btn3.style.color = '#ff962a';
+    mi_btn4.style.color = '#ff962a';
     reset();
     mi_btn1.style.backgroundImage = "url(./imgs/botton_hover.png)";
     mi_btn2.style.backgroundImage = "url(./imgs/botton.png)";
     mi_btn3.style.backgroundImage = "url(./imgs/botton.png)";
+    mi_btn4.style.backgroundImage = "url(./imgs/botton.png)";
 });
 
 mi_btn2.addEventListener('click', function (){
     mi_mid2.style.display = 'block';
     mi_mid3.style.display = 'none';
     mi_mid1.style.display = 'none';
+    mi_mid4.style.display = 'none';
+    mi_btn2.style.color = '#ffffff';
+    mi_btn1.style.color = '#ff962a';
+    mi_btn3.style.color = '#ff962a';
+    mi_btn4.style.color = '#ff962a';
     reset();
     mi_btn2.style.backgroundImage = "url(./imgs/botton_hover.png)";
     mi_btn1.style.backgroundImage = "url(./imgs/botton.png)";
     mi_btn3.style.backgroundImage = "url(./imgs/botton.png)";
+    mi_btn4.style.backgroundImage = "url(./imgs/botton.png)";
 });
 
 mi_btn3.addEventListener('click', function (){
     mi_mid3.style.display = 'block';
     mi_mid1.style.display = 'none';
     mi_mid2.style.display = 'none';
+    mi_mid4.style.display = 'none';
+    mi_btn3.style.color = '#ffffff';
+    mi_btn2.style.color = '#ff962a';
+    mi_btn1.style.color = '#ff962a';
+    mi_btn4.style.color = '#ff962a';
     reset();
     mi_btn3.style.backgroundImage = "url(./imgs/botton_hover.png)";
     mi_btn2.style.backgroundImage = "url(./imgs/botton.png)";
     mi_btn1.style.backgroundImage = "url(./imgs/botton.png)";
+    mi_btn4.style.backgroundImage = "url(./imgs/botton.png)";
+});
+
+mi_btn4.addEventListener('click', function (){
+    mi_mid4.style.display = 'block';
+    mi_mid1.style.display = 'none';
+    mi_mid2.style.display = 'none';
+    mi_mid3.style.display = 'none';
+    mi_btn4.style.color = '#ffffff';
+    mi_btn2.style.color = '#ff962a';
+    mi_btn3.style.color = '#ff962a';
+    mi_btn1.style.color = '#ff962a';
+    reset();
+    mi_btn4.style.backgroundImage = "url(./imgs/botton_hover.png)";
+    mi_btn2.style.backgroundImage = "url(./imgs/botton.png)";
+    mi_btn1.style.backgroundImage = "url(./imgs/botton.png)";
+    mi_btn3.style.backgroundImage = "url(./imgs/botton.png)";
 });
 
 function removeClass(obj, cls) {
@@ -201,29 +237,62 @@ var li5 = document.querySelector('.fc_li5');
     }
 
 //点击箭头
-var rightArrow = document.querySelector('.rightArrow');
-var leftArrow = document.querySelector('.leftArrow');
-var fc_content = document.querySelector('.fc_content');
+// var rightArrow = document.querySelector('.rightArrow');
+// var leftArrow = document.querySelector('.leftArrow');
+// var fc_content = document.querySelector('.fc_content');
 
-function animate(offset) {
-    fc_content.style.left = parseInt(fc_content.style.left) + offset + 'px';
-}
-rightArrow.addEventListener('click',function () {
-    //if来判断是否到达终点,4是fc_li下li的个数,改个数,改数字.
-    if (parseInt(fc_content.style.left) > -4*(li1.offsetWidth)) {
-        animate(-li1.offsetWidth);//li1的宽度
-    }
-})
-    leftArrow.addEventListener('click',function () {
-        if (parseInt(fc_content.style.left) < 0) {
-            animate(li1.offsetWidth);
-        }   
-})
+// function animate(offset) {
+//     fc_content.style.left = parseInt(fc_content.style.left) + offset + 'px';
+// }
+// rightArrow.addEventListener('click',function () {
+//     //if来判断是否到达终点,4是fc_li下li的个数,改个数,改数字.
+//     if (parseInt(fc_content.style.left) > -4*(li1.offsetWidth)) {
+//         animate(-li1.offsetWidth);//li1的宽度
+//     }
+// })
+//     leftArrow.addEventListener('click',function () {
+//         if (parseInt(fc_content.style.left) < 0) {
+//             animate(li1.offsetWidth);
+//         }   
+// })
 //连队风采点击放大效果
 
 var fc_pic = document.querySelector('.fc_pic');
+var row1 = document.querySelector('.row1');
+var row2 = document.querySelector('.row2');
+var row3 = document.querySelector('.row3');
+var row4 = document.querySelector('.row4');
+var row6 = document.querySelector('.row6');
+var row7 = document.querySelector('.row7');
+var row8 = document.querySelector('.row8');
+var row9 = document.querySelector('.row9');
+row1.onclick = function() {
+    openNew();
+}
+row2.onclick = function() {
+    openNew();
+}
+row3.onclick = function() {
+    openNew();
+}
+row4.onclick = function() {
+    openNew();
+}
+row6.onclick = function() {
+    openNew();
+}
+row7.onclick = function() {
+    openNew();
+}
+row8.onclick = function() {
+    openNew();
+}
+row9.onclick = function() {
+    openNew();
+}
+
 fc_pic.onclick = function () {
-    openNew()
+    openNew();
 }
 function openNew() {
     var oMask = document.createElement("div");

@@ -1,0 +1,492 @@
+body, div, ul, li, h1, h2, h3, h4, h5, h6, input, form, a, p {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+    background: #fff;
+    color: #222;
+}
+ol, ul, li, h1, h2, h3, h4, h5, h6 {
+    list-style: none;
+}
+a {
+    color: #222;
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0;
+}
+i, span {
+    font-style: normal;
+    /*font-weight: normal;*/
+}
+input, button, select{
+    font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+    outline: 0;
+}
+li:after {
+    clear: both;
+}
+ul:after {
+    clear: both;
+}
+
+/*头部*/
+#header{
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    height: 78px;
+    z-index: 40;
+}
+#header .header_main{
+    position: fixed;
+    width: 1000px;
+    height: 78px;
+    margin-left: -500px;
+    left: 50%;
+    background: #fff;
+}
+#header .logo{
+    width: 213px;
+    float: left;
+    margin-right: 50px;
+}
+.logo img{
+    margin-top: 15px;
+}
+#header ul{
+    float: right;
+}
+#header ul li{
+    float: left;
+    display: inline-block;
+    list-style: none;
+}
+#header ul li a{
+    display: inline-block;
+    padding: 0 15px 0 15px;
+    line-height: 78px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 19px;
+    color: #000;
+}
+#header ul li a:hover{
+    color: #fff;
+    background: #a4f087;
+}
+#header ul:after{
+    clear: both;
+}
+
+/*中间主体*/
+#main{
+    position: relative;
+    min-width: 1000px;
+    top: 78px;
+    height: 2195px;
+    margin: 0 auto;
+    background: url(../imgs/bg_train.png) no-repeat center center;
+    background-size: 100% 100%;
+    background-position: top;
+    overflow: hidden;
+}
+.banner{
+    position: relative;
+    width: 1030px;
+    height: 800px;
+    margin: 0 auto;
+}
+.banner_main{
+    animation: banner_in ease 1.5s
+}
+@keyframes banner_in{
+    0%{
+       opacity: 0;
+       transform: translate(-100px,-100px)
+    }
+    100%{
+       opacity: 1;
+       transform: translate(0,0)
+    }
+}
+.people{
+    position: relative;
+    top: 75px;
+    float: left;
+    left: 10px;
+    z-index: 3;
+    animation: fly_people_in 1.5s linear, fly_people linear infinite 6s 1.5s;
+}
+@keyframes fly_people_in{
+    0%  {transform: translate(0,-100%)}
+    100%{transform: translate(0,0)}
+}
+@keyframes fly_people{
+    0% {transform: translate(0,0)}
+    25%{transform: translate(0,-20px)}
+    50%{transform: translate(0,0px)}
+    75%{transform: translate(0,20px)}
+    100%{transform: translate(0,0px)}
+}
+.banner .banner_main{
+    position: relative;
+    top: 30px;
+    left: -25px;
+    float: right;
+    z-index: 2;
+}
+.banner .building{
+    position: absolute;
+    top: 359px;
+    left: 805px;
+    animation: fly_building infinite linear 3s;
+    z-index: 1;
+}
+@keyframes fly_building{
+    0% {transform: translate(0,0)}
+    25%{transform: translate(0,-5px)}
+    50%{transform: translate(0,-10px)}
+    75%{transform: translate(0,-5px)}
+    100%{transform: translate(0,0px)}
+}
+.banner .bird{
+    position: absolute;
+    top: 40px;
+    left: 860px;
+    animation: fly_bird_in 1.5s linear,fly_bird infinite linear 4s 1.5s;
+}
+@keyframes fly_bird_in{
+    0%  {transform: translate(30%,-100%)}
+    100%{transform: translate(0,0)}
+}
+@keyframes fly_bird{
+    0% {transform: translate(0,0)}
+    25%{transform: translate(0,-5px)}
+    50%{transform: translate(0,-0px)}
+    75%{transform: translate(0,5px)}
+    100%{transform: translate(0,0px)}
+}
+/*倒计时*/
+.count_down{
+    animation: count_down 1.5s;
+}
+@keyframes count_down{
+    0%  {transform: rotateX(180deg)}
+    50% {transform: rotateX(180deg)}
+    100%{transform: rotateX(0deg)}
+}
+#day{
+    position: absolute;
+    top: 429px;
+    left: 298px;
+    z-index: 3;
+}
+.day2{
+    position: relative;
+    left: -5px;
+    top: 3px;
+}
+#hour{
+    position: absolute;
+    top: 435px;
+    left: 411px;
+    z-index: 3;
+}
+.hour2{
+    position: relative;
+    left: -5px;
+    top: 3px;
+}
+#minute{
+    position: absolute;
+    top: 445px;
+    left: 529px;
+    z-index: 3;
+}
+.minute2{
+    position: relative;
+    left: -5px;
+    top: 3px;
+}
+#second{
+    position: absolute;
+    top: 454px;
+    left: 646px;
+    z-index: 3;
+}
+.second2{
+    position: relative;
+    left: -5px;
+    top: 3px;
+}
+#day img, #hour img, #minute img, #second img{
+    float: left;
+}
+/*左右的两个二维码*/
+#left_box{
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    margin-left: -750px;
+    transform: translate(10%, 50%);
+    z-index: 3;
+    animation: left_box_in 1.5s linear,fly_leftbox infinite linear 6s 1.5s;
+}
+@keyframes left_box_in{
+    0%  {opacity:0; margin-left: -850px;}
+    100%{opacity: 1; margin-left: -750px;}
+}
+@keyframes fly_leftbox{
+    0% {transform: translate(10%,50%)}
+    25%{transform: translate(10%,55%)}
+    50%{transform: translate(10%,50%)}
+    75%{transform: translate(10%,45%)}
+    100%{transform: translate(10%,50%)}
+}
+#right_box{
+    position: fixed;
+    top: 20%;
+    right: 50%;
+    transform: translate(345%, 50%);
+    z-index: 3;
+    animation: right_box_in 1.5s linear, fly_rightbox infinite linear 6s 1.5s;
+}
+@keyframes right_box_in{
+    0%  {opacity: 0; margin-right: -100px}
+    100%{opacity: 1; margin-right: 0}
+}
+@keyframes fly_rightbox{
+    0% {transform: translate(345%,50%)}
+    25%{transform: translate(345%,55%)}
+    50%{transform: translate(345%,50%)}
+    75%{transform: translate(345%,45%)}
+    100%{transform: translate(345%,50%)}
+}
+/*邮子攻略*/
+.mili-box {
+    position: relative;
+    top: -90px;
+    margin: 0 auto;
+    width: 1206px;
+    height: 1376px;
+}
+.mili {
+    position:relative;
+    height: 1376px;
+    width: 1106px;
+}
+.mi_strategy {
+    margin-left: 470px;
+    width: 263px;
+    height: 137px;
+    background: url('../imgs/title_strategy.png') center center no-repeat;
+}
+.mi_main {
+    position: relative;
+    height: 1259px;
+    background: url('../imgs/data_f2.png') center center no-repeat;
+    z-index: 2;
+}
+.mi_btn_box {
+    position: absolute;
+    margin-top: 49px;
+    margin-left: 135px;
+    height: 180px;
+    width: 963px;
+}
+.mi_btn {
+    float: left;
+    width:213px;
+    height: 88px;
+    margin: 0 10px 10px 10px;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.mi_btn1 {
+    font-size: 26px;
+    font-family: "微软雅黑";
+    line-height: 75px;
+    width: 213px;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+    background: url('../imgs/botton_hover.png') center center no-repeat;
+}
+.mi_btn2 {
+    font-size: 26px;
+    font-family: "微软雅黑";
+    line-height: 75px;
+    width: 213px;
+    text-align: center;
+    cursor: pointer;
+    color: #ff962a;
+    background: url('../imgs/botton.png') center center no-repeat;
+}
+.mi_btn3 {
+    font-size: 26px;
+    font-family: "微软雅黑";
+    line-height: 75px;
+    width: 213px;
+    text-align: center;
+    cursor: pointer;
+    color: #ff962a;
+    background: url('../imgs/botton.png') center center no-repeat;
+}
+.mi_btn4 {
+    font-size: 26px;
+    font-family: "微软雅黑";
+    line-height: 75px;
+    width: 213px;
+    text-align: center;
+    cursor: pointer;
+    color: #ff962a;
+    background: url('../imgs/botton.png') center center no-repeat;
+}
+.mi_btn5 {
+    font-size: 26px;
+    font-family: "微软雅黑";
+    line-height: 75px;
+    width: 213px;
+    text-align: center;
+    cursor: pointer;
+    color: #ff962a;
+    background: url('../imgs/botton.png') center center no-repeat;
+}
+.mi_btn6 {
+    font-size: 26px;
+    font-family: "微软雅黑";
+    line-height: 75px;
+    width: 213px;
+    text-align: center;
+    cursor: pointer;
+    color: #ff962a;
+    background: url('../imgs/botton.png') center center no-repeat;
+}
+.mi_btn7 {
+    font-size: 26px;
+    font-family: "微软雅黑";
+    line-height: 75px;
+    width: 213px;
+    text-align: center;
+    cursor: pointer;
+    color: #ff962a;
+    background: url('../imgs/botton.png') center center no-repeat;
+}
+.mi_btn8 {
+    font-size: 26px;
+    font-family: "微软雅黑";
+    line-height: 75px;
+    width: 213px;
+    text-align: center;
+    cursor: pointer;
+    color: #ff962a;
+    background: url('../imgs/botton.png') center center no-repeat;
+}
+.mi_mid1 {
+    position:absolute;
+    top: 247px;
+    left: 1px;
+    width: 1106px;
+    height: 1105px;
+}
+.mi_mid2 {
+    position:absolute;
+    top: 233px;
+    left: 3.5px;
+    width: 1106px;
+    height: 1105px;
+}
+
+
+/*返回顶部*/
+.go_top{
+    position: fixed;
+    top: 20%;
+    right: 50%;
+    margin-left: 100px;
+    transform: translate(500%, 480%);
+    z-index: 3;
+    cursor: pointer;
+    display: none;
+}
+.stone{
+    position: relative;
+    width: 90px;
+    height: 100px;
+}
+.reset{
+    position: relative;
+    top: -70px;
+    z-index: 4;
+    left: 67px;
+    width: 40px;
+    height: 50px;
+}
+
+
+
+/*小草*/
+.grass{
+    position: relative;
+    top: 30px;
+}
+
+/*底部版尾*/
+#footer{
+    position: relative;
+    height: 206px;
+    width: 100%;
+    margin: 0 auto;
+    background: #d2f3aa;
+}
+#footer .footer_main{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+#footer .tongdao{
+    position: relative;
+    width: 320px;
+    top: 56px;
+    color: #78b035;
+    margin: 0 auto;
+    display: block;
+}
+.tongdao a{
+    font-size: 16px;
+    font-family: '微软雅黑';
+    color: #78b035;
+    text-decoration: none;
+}
+.shengming{
+    position: relative;
+    display: block;
+    width: 657px;
+    font-size: 16px;
+    font-family: '微软雅黑';
+    color: #78b035;
+    margin: 0 auto;
+    top: 73px;
+}
+.relation{
+    position: relative;
+    display: block;
+    width: 784px;
+    font-size: 16px;
+    font-family: '微软雅黑';
+    color: #78b035;
+    margin: 0 auto;
+    top: 90px;
+}
