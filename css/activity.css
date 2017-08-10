@@ -470,3 +470,296 @@ ul:after {
     margin: 0 auto;
     top: 90px;
 }
+
+
+/*下面是学长学姐棒棒忙*/
+.mi_mid2 .mi_tittle {
+    position: relative;
+    height: 160px;
+}
+.classification {
+    position: relative;
+    margin: 49px auto 0 133px;
+    width: 940px;
+    height: 102px;
+    background: url('../imgs/bacc_green.png') center center no-repeat;
+}
+.classification li {
+    float: left;
+    width: 88px;
+    height: 69px;
+    // background: #222;
+    margin: 32px 0 1px 40px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 64px;
+    color: #69bd31;
+    cursor: pointer;
+}
+.classification .all {
+    margin-left: 100px;
+}
+.classification .other {
+    margin-right: 100px;
+}
+
+.underline {
+    display: none;
+    height: 5px;
+    background-color: #ff8d13;
+    border-radius:5px;
+}
+.classification li:hover .underline {
+    display: block;
+}
+.classification li:hover div {
+    color: #ff8d13;
+}
+.paging_box {
+    position: relative;
+    margin-left: 156px;
+    width: 820px;
+    height: 760px;
+    background: #efffe1;
+
+}
+.question {
+    position: absolute;
+    top: 48px;
+    left: 90px;
+    width: 695px;
+    height: 36px;
+}
+.content {
+    float: left;
+    width: 504px;
+    color: #fd6b2f;
+    text-align: left;
+    font-size: 18px;
+    line-height: 36px;
+}
+.questioner {
+    float: left;
+    width: 113px;
+    color: #fd6b2f;
+    text-align: left;
+    font-size: 18px;
+    line-height: 36px;
+}
+.time {
+    float: left;
+    width: 78px;
+    color: #fd6b2f;
+    text-align: left;
+    font-size: 18px;
+    line-height: 36px;
+}
+.ul_container {
+    position: absolute;
+    top: 116px;
+    left: 90px;
+    width: 695px;
+    height: 540px;
+}
+#ul1 {
+
+    float: left;
+    width: 503px;
+    height: 544px;
+}
+#ul1 li {
+    position: relative;
+    border-bottom: 2px solid #c4eca1;
+    overflow: hidden;
+    width: 503px;
+    height: 41px;
+    // background:red;
+    color: #ff9524;
+    line-height: 41px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#ul2 {
+
+    float: left;
+    width: 113px;
+    height: 544px;
+}
+#ul2 li {
+    position: relative;
+    border-bottom: 2px solid #c4eca1;
+    overflow: hidden;
+    width: 114px;
+    height: 41px;
+    color: #f8deaf;
+    text-align: left;
+    line-height: 41px;
+    font-size: 14px;
+}
+#ul3 {
+    float: left;
+    width: 78px;
+    height: 544px;
+}
+#ul3 li {
+    position: relative;
+
+    border-bottom: 2px solid #c4eca1;
+    overflow: hidden;
+    width: 78px;
+    height: 41px;
+
+    color: #f8deaf;
+    text-align: left;
+    line-height: 41px;
+    font-size: 14px;
+}
+#paging_a {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: #ffc546;
+}
+#div1 {
+    position: absolute;
+    left: 274px;
+    bottom: 30px;
+    width: 313px;
+    height: 40px;
+} 
+#div1 a {
+    margin-left: 10px;
+}
+#paging_prev {
+    display: block;
+    float: left;
+    width: 24px;
+    height: 36px;
+    background: url('../imgs/prev.png') center center no-repeat;
+}
+#paging_prev_not {
+    display: block;
+    float: left;
+    width: 24px;
+    height: 36px;
+    background: url('../imgs/prev.png') center center no-repeat;
+    opacity: 0.4;
+}
+#paging_next {
+    display: block;
+    float: left;
+    width: 24px;
+    height: 36px;
+    background: url('../imgs/next.png') center center no-repeat;
+}
+#paging_next_not {
+    display: block;
+    float: left;
+    width: 24px;
+    height: 36px;
+    background: url('../imgs/next.png') center center no-repeat;
+    opacity: 0.4;
+}
+#paging_num {
+    display: block;
+    float: left;
+    color: #fff;
+    width: 32px;
+    height :32px;
+    border-radius: 50%;
+    background: #ffc546;
+    text-align: center;
+    line-height: 32px;
+    font-size: 18px;
+}
+#paging_num_oth {
+    display: block;
+    float: left;
+    color: #ffc546;
+    width: 32px;
+    height :32px;
+    // border-radius: 50%;
+    background: transparent;
+    text-align: center;
+    line-height: 32px;
+    font-size: 18px;
+}
+/*点击放大*/
+.fc_pic {
+    position: relative;
+    top: 200px;
+    width: 100px;
+    height: 100px;
+    // background: red;
+}
+#mask {
+    position:fixed;
+    top: 0;
+    left: 0;
+    height:100%;
+    width:100%;
+    background: #222;
+    opacity: 0.7;
+    filter: alpha(opacity = 70);
+    z-index: 100;
+}
+#fc_big {
+    position: relative;
+    margin: -1200px auto 0 auto;
+    height: 812px;
+    width: 939px;
+    background: url('../imgs/wrap_fff.png') center center no-repeat;
+    z-index: 110;
+}
+#fc_big .big_close {
+    position: absolute;
+    top: 21px;
+    right: 26px;
+    width: 52px;
+    height: 53px;
+    background :url('../imgs/close.png') center center no-repeat;
+}
+#fc_big .question_mark {
+    position: absolute;
+    top: 47px;
+    left: 45px;
+    width: 29px;
+    height: 29px;
+    background: url('../imgs/question_mark.png') center center no-repeat;
+} 
+.big_qes {
+    position: absolute;
+    top: 38px;
+    left: 80px;
+    width: 772px;
+    height: 40px;
+    background: red;
+}
+
+.reply {
+    position: absolute;
+    top: 110px;
+    left: 122px;
+    width: 196px;
+    height: 69px;
+    text-align:left;
+    font-size: 20px;
+    line-height: 69px;
+    color: #999;
+    background: green;
+}
+/*
+#ul4 {
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-color: #222;
+    opacity: 0.3;
+}
+#paging_prev2 {
+    display: block;
+    float: left;
+    width: 24px;
+    height: 36px;
+    background: url('../imgs/prev.png') center center no-repeat;
+}*/

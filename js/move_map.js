@@ -56,15 +56,21 @@ map.onmousedown = function (e) {
 big.addEventListener('click', function () {
     bs += 1;
     switch (bs) {
-        case 1: 
+        case 1: realMap.style.top = "parseInt(realMap.offsetTop) * 2" + "px";
+                realMap.style.left = "parseInt(realMap.offsetLeft) * 2" + "px";
+                realMap.style.transition = "width 1s, height 1s";
                 realMap.style.width = "876px";
                 realMap.style.height = "429px";
                 break;
-        case 2: 
+        case 2: realMap.style.top = "parseInt(realMap.offsetTop) * 2" + "px";
+                realMap.style.left = "parseInt(realMap.offsetLeft) * 2" + "px";
+                realMap.style.transition = "width 1s, height 1s";
                 realMap.style.width = "1752px";
                 realMap.style.height = "858px";
                 break;
-        case 3: 
+        case 3: realMap.style.top = "parseInt(realMap.offsetTop) * 2" + "px";
+                realMap.style.left = "parseInt(realMap.offsetLeft) * 2" + "px";
+                realMap.style.transition = "width 1s, height 1s";
                 realMap.style.width = "3504px";
                 realMap.style.height = "1716px";
                 break;
@@ -77,17 +83,20 @@ small.addEventListener('click', function () {
     switch (bs) {
         case 0: realMap.style.top = 0;
                 realMap.style.left = 0;
+                realMap.style.transition = "width 1s, height 1s";
                 realMap.style.width = "876px";
                 realMap.style.height = "429px";
                 bs += 1;
                 break;
         case 1: realMap.style.top = 0;
                 realMap.style.left = 0;
+                realMap.style.transition = "width 1s, height 1s";
                 realMap.style.width = "876px";
                 realMap.style.height = "429px";
                 break;
         case 2: realMap.style.top = 0;
                 realMap.style.left = 0;
+                realMap.style.transition = "width 1s, height 1s";
                 realMap.style.width = "1752px";
                 realMap.style.height = "858px";
                 break;

@@ -396,19 +396,248 @@ ul:after {
 }
 .mi_mid1 {
     position:absolute;
-    top: 247px;
-    left: 1px;
-    width: 1106px;
-    height: 1105px;
+    top: 420px;
+    left: 100px;
+    width: 1000px;
+    height: 910px;
+    z-index: 3;
 }
 .mi_mid2 {
     position:absolute;
-    top: 233px;
-    left: 3.5px;
-    width: 1106px;
-    height: 1105px;
+    top: 420px;
+    left: 100px;
+    width: 1000px;
+    height: 910px;
+    z-index: 3;
 }
-
+.qingdan{
+    position: relative;
+    top: 70px;
+    width: 800px;
+    margin: 0 auto;
+    border-bottom: 1px solid #d2f2b5;
+}
+.qingdan_title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    line-height: 24px;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    color: #fd6b2f;
+    vertical-align: top;
+}
+.qingdan_main{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 710px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #ffa22a;
+}
+.qingdan_main:after{
+    clear: both;
+}
+.qingdan:last-child{
+    border: none;
+}
+.mi_mid3 {
+    position:absolute;
+    top: 420px;
+    left: 100px;
+    width: 1000px;
+    height: 910px;
+    z-index: 3;
+}
+.mi_mid4 {
+    position:absolute;
+    top: 420px;
+    left: 100px;
+    width: 1000px;
+    height: 910px;
+    z-index: 3;
+}
+.mi_mid5 {
+    position:absolute;
+    top: 420px;
+    left: 100px;
+    width: 1000px;
+    height: 910px;
+    z-index: 3;
+}
+.qq{
+    margin-left: 150px;
+    margin-top: 100px;
+    width: 700px;
+    height: 700px;
+    overflow: hidden;
+}
+.qun{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 700px;
+}
+.xinshengqun{
+    display: inline-block;
+    width: 700px;
+    margin-bottom: 30px;
+}
+.xinshengqun:after{
+    clear: both;
+}
+.qun_title{
+    font-size: 16px;
+    font-family: "微软雅黑";
+    color: #fd6b2f;
+    margin-bottom: 25px;
+}
+.qun_main_left{
+    font-size: 14px;
+    color: #ffa22a;
+    width: 300px;
+    float: left;
+}
+.qun_main_left span, .qun_main_right span{
+    display: block;
+    width: 300px;
+    border-bottom: 1px solid #d2f2b5;
+    line-height: 24px;
+    padding: 10px 0;
+}
+.qun_main_left span:last-child, .qun_main_right span:last-child{
+    border: none;
+}
+.qun_main_right{
+    font-size: 14px;
+    color: #ffa22a;
+    width: 300px;
+    float: right;
+}
+.qun_main_right:after{
+    clear: both;
+}
+.laoxiangqun{
+    clear: both;
+    width: 700px;
+    display: inline-block;
+}
+.mi_mid6 {
+    position:absolute;
+    top: 420px;
+    left: 100px;
+    width: 1000px;
+    height: 910px;
+    z-index: 3;
+}
+.anquan1{
+    position: relative;
+    width: 700px;
+    margin: 0 auto;
+    top: 50px;
+    line-height: 24px;
+    border-bottom: 1px solid #d2f2b5;
+}
+.anquan{
+    border: none;
+}
+.anquan_title{
+    font-size: 16px;
+    font-family: "微软雅黑";
+    color: #fd6b2f;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 0;
+}
+.anquan_main{
+    font-size: 14px;
+    color: #ffa22a;
+    width: 610px;
+    margin: 10px 0;
+    display: inline-block;
+}
+.anquan2{
+    position: relative;
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+.anquan2 img{
+    position: relative;
+    vertical-align: middle;
+    margin: -60px 20px 0 0;
+}
+.anquan2 span{
+    display: inline-block;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffc268;
+    width: 650px;
+}
+.mi_mid7 {
+    position:absolute;
+    top: 420px;
+    left: 100px;
+    width: 1000px;
+    height: 910px;
+    z-index: 3;
+}
+.chengche{
+    width: 700px;
+    position: relative;
+    top: 85px;
+    border-bottom: 1px solid #d2f2b5;
+    margin-left: 150px;
+}
+.chengche:last-child{
+    border: none;
+}
+.che_title{
+    font-size: 16px;
+    font-family: "微软雅黑";
+    color: #fd6b2f;
+    line-height: 24px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    display: block;
+}
+.che_main{
+    display: block;
+    line-height: 27px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #ffa22a;
+}
+.mi_mid8 {
+    position:absolute;
+    top: 420px;
+    left: 100px;
+    width: 1000px;
+    height: 910px;
+    z-index: 3;
+}
+.scroll_w{
+    position:absolute;
+    left: 958px;
+    transform: rotate(-0.8deg);
+    top: 100px;
+    width: 9px;
+    height: 660px;
+    background: #b7f1eb;
+    border-radius: 5px;
+}
+.scroll{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 9px;
+    height: 90px;
+    background: #ff9062;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 /*返回顶部*/
 .go_top{
